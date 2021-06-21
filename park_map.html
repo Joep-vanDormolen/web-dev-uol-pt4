@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='author' content='Team 89'>
+    <meta name="description" content="Team 89 GenericPark Park Information Page">
+    <meta name='robots' content='none'>
+    <title>GenericPark&trade; -  Park Information</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Add JS for bounce button -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bounce.js"></script> 
+
+    <!-- Ternary Page Layout -->
+
+    <!-- Header Navigation-->
+    <!-- Note: Header Nav is full width -->
+    <!-- Primary Navigation -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo.png" alt="Theme Park Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Logo
+            </a>
+            <form class="d-flex">
+                <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Language
+                </button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Secondary Navigation -->
+    <ul class="nav justify-content-center nav-blue">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>  
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link active" href="online_sales.html">Tickets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="park_map.html">Location</a>
+        </li>
+        <!--
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#faq">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#support">Support</a>
+        </li> -->
+    </ul>
+
+    <!-- Header Image -->
+    <!-- Note: Header Image is full width-->
+    <div class="container-fluid w-100 h-auto m-0 p-0"> <!-- 100% width, double border at top -->
+        <!-- Image of the map of the park-->
+        <img class='img-fluid w-100' src='assets/images/hero2.png' alt='GenericPark&trade; Mouse Waving at the Castle'> 
+    </div>
+
+    <!-- Scroll Arrow -->
+    <div class="arrow animated bounce"></div>
+
+    <!-- General Park Info inside container of the page -->
+    <div class="container-fluid park_schedule_container">
+        <div class='container space-between flex-start'>
+            <div class="row pt-5 pb-5">
+                <h3>Park Schedule</h3>
+                <!-- Each block is only 1/4 the width of the outer container -->
+                <div class="col-sm">
+                        <h3 class="f-title f_600 t_color f_size_18">Opening Times</h3>
+                        <p>Monday: 10:00 - 22:00 <br>
+                            Tuesday: 10:00 - 22:00 <br>
+                            Wednesday: 10:00 - 22:00 <br>
+                            Thursday: 10:00 - 22:00 <br>
+                            Friday: 10:00 - 22:00 <br>
+                            Saturday: 10:00 - 22:00 <br>
+                            Sunday: 10:00 - 22:00
+                        </p>
+                </div>
+                <div class="col-sm">
+                    <h3 class="f-title f_600 t_color f_size_18">Parade Times</h3>
+                    <p>Every day at:
+                        10:00 - 10:30<br>
+                        12:00 - 12:30<br>
+                        14:00 - 14: 30<br>
+                        16:00 - 16:30 <br>
+                        18:00 - 18:30 <br>
+                        20:00 - 20:30 <br>
+                    </p>
+                </div>
+                <div class="col-sm">
+                    <h3 class="f-title f_600 t_color f_size_18">Special Events</h3>
+                    <p>At GenericPark&trade; our special events are really special.  So special in fact, that you'll just have to come to the park to find out what they are!
+                    </p>
+                </div>
+                <div class="col-sm">
+                    <h3 class="f-title f_600 t_color f_size_18">Schedule</h3>
+                    <p>Schedules - everyone needs one.<br /> 
+                        <B>Not us!</B> - <I>we don't have one.</I><br /><br />
+                        We play it by ear. If its being eaten by crazy dinosaurs or getting run over by a runaway roller coaster, its not in our schedule, so it didn't happen.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Downloadable/Viewable Park Map extends the full width of the page -->
+    <!-- Currently nothing happens when you click the button-->
+    <div class="container"> <!-- 100% width -->
+        <div class="row pt-5 pb-5"> <!-- Padding Top, Bottom 5-->
+            <div class="download_map_button">
+                <img src='assets/images/map_theme_park.png' alt='A Map Of The Park' style='width:100%;'> 
+                <button type="button" class="btn btn-primary border-radius-lg">Download Park Map</button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Element that holds directions to the park and a document with safety compliance -->
+    <div class='container-fluid directions_container'>
+        <div class='container space-between flex-start'>
+            <div class="row pt-5 pb-5 "> <!-- Padding Top, Bottom 5 -->
+                <div class='col-sm text-center'>
+                    <div class="container" style="min-width:350px; max-width:350px">
+                        <img src='assets/images/covid-19_safety_measures.png' alt='Picture of COVID-19 safety measures' height='235' width='313'>
+                        <button class="btn" type='button'>View the safety measures</button>
+                        <H5>Corona virus safety measures</H5>
+                        <p>Read up on the measures we have taken to make your visit as safe and enjoyable as possible.</p>
+                    </div>
+                </div>
+                
+                <div class='col-sm text-center'>
+                    <div class="container" style="min-width:350px; max-width:350px">
+                        <img src='assets/images/theme_park.png' alt='Picture of the park' height='235' width='313'>
+                        <button class="btn" type='button'>Download the route guide to the park</button>
+                        <H5>Directions to the park</H5>
+                        <p>Coming from the train station? By car? Or plane? We have got you covered. Below you will find the directions to our park.</p>
+                    </div>
+                </div>
+                <div class='col-sm text-center'>
+                     <div class="container" style="min-width:350px; max-width:350px">
+                        <img src='assets/images/ticket_booking.png' alt='Picture of the bungalow park' height='235' width='313'>
+                        <button class="btn" type='button'>View availability</button>
+                        <H5>Book your ticket now</H5>
+                        <p>Come for an enchanting stay in some of our family friendly accomodations and get even more out of your visit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   
+  <!-- Footer -->
+  <footer class="new_footer_area bg_color">
+    <div class="new_footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                        <p>Don’t miss the latest safety updates.</p>
+                        <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate>
+                            <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                            <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                            <p class="mchimp-errmessage" style="display: none;"></p>
+                            <p class="mchimp-sucmessage" style="display: none;"></p>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Tickets & Location</h3>
+                        <ul class="list-unstyled f_list">
+                            <li><a href="online_sales.html">Buy A Ticket</a></li>
+                            <li><a href="park_map.html">Park Directions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Safety</h3>
+                        <ul class="list-unstyled f_list">
+                            <li><a href="#">Safety Compliance </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Rules</h3>
+                        <ul class="list-unstyled f_list">
+                            <li><a href="#">Park Rules & Regulations</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row justify-content-center">
+                &copy; Park Licence
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

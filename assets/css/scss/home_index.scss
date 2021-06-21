@@ -1,0 +1,111 @@
+/* First Page - Home */
+
+.nav-blue {
+    background-color: $light_blue;
+    color: #fff !important;
+ }
+
+.nav-link {
+    background-color: $light_blue;
+    color: #fff;
+    border-color: $hover;
+    &:hover {
+        background-color: white;
+        border-color: $hover;
+        color: $hover;
+        background: white;
+        transition: 0.3s all ease;
+    }
+}
+
+
+  body {
+    background: #fbfbfd;
+  }
+  
+  .section1 img{
+    height:300px;
+    width:450px;
+    box-shadow: 2px 2px grey;
+  }
+  
+  /* set section 1 background color to grey */
+  .section1 container{
+	background: #E6EBF1;
+  }
+
+
+   .things_to_do_section {
+    background: #E6EBF1;
+   }
+
+	.grid{
+    display:flex;
+    background-color:light-grey;
+    padding:100px;
+  }
+
+  .text{
+    padding:5px 100px 70px;
+  }
+  
+  .section3 img{
+    height:350px;
+    width:350px;
+    box-shadow: 2px 2px grey;
+  }
+  
+  .section3 {
+	   background: #E6EBF1;
+  }
+  
+  .grid{
+    display:flex;
+    background-color:light-grey;
+    padding:100px;
+  }
+  
+  .text1{
+    padding:5px 100px 70px;
+
+    h2 {
+      color: blue;
+    }
+  }
+  
+  .text3{
+    width: 100%;
+    padding:20px 20px 70px;
+
+    h2 {
+      color: blue;
+    }
+  }
+  
+  .section2 {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  #main-attraction {
+    width: 100%;
+  }
+  
+  .s2-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .slider-text-color {
+      color: white!important
+  }
+  
+  .h-s2 {
+    color: rgba(255, 255, 255); 
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+

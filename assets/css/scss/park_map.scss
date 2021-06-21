@@ -1,0 +1,36 @@
+    /* Set background to light grey */
+    .park_schedule_container{
+        background: #E6EBF1;
+    }
+
+    
+    /* Set background to light grey
+        add margins to buttons inside this container
+        set background color to white for the interior columns
+        add top and bottom padding to columns
+     **************************************************************/
+    .directions_container {
+        background: #E6EBF1;
+
+        .btn {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .col-sm  {
+            background-color: white;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        
+    }
+
+    /*  set margins for the p inside directions_container to 30px left/right
+        and set italic text
+    *************************************************************************/
+    .directions_container p {
+            margin-left: 30px;
+            margin-right: 30px;
+            font-style: italic;
+    }
+

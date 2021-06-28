@@ -3,8 +3,9 @@
 		display: d-inline-block;
 		height: 100px;
 		width: 135px;
-		margin: 0 auto;
+		margin: auto;
 		background-color: rgb(255, 255, 255);
+		background-position: 25px 25px;
 		animation-name:	logoStretch;
 		animation-duration: 3s;
 		animation-direction: alternate;
@@ -16,6 +17,8 @@
 	}
 	
 	@keyframes logoStretch {
+		from { background-position: 0, 0;}
+		to { background-position: 160, 0; }
     0% {
         transform: scale(.3);
 		background-color: rgb(255, 0, 0);

@@ -1,28 +1,14 @@
-	*/ Animation */
-	#logo_animation {
-		display: d-inline-block;
-		height: 100px;
-		width: 135px;
-		margin: auto;
-		background-color: rgb(255, 255, 255);
-		background-image: url(GenericPark_logo.png);
-		animation-name:	logoBounce;
-		animation-duration: 3s;
-		animation-iteration-count: infinite;
-		animation-delay: 1s;
-	}
-	
-	@keyframes logoBounce {
-    0% {
-        transform: scale(.3);
-		background-color: rgb(255, 0, 0);
-		border-radius: 100%;
-    }
-    50% {
-		background-color: rgb(0, 0, 255);
-    }
-    100% {
-        transform: scale(1.5);
-		background-color: rgb(255, 255, 0);
-    }
+ */ Animation elements for logo */
+  	@keyframes logo_spring { 
+  0% { transform: scale(1) translateY(0); }
+  10% { transform: scale(1.2, 0.6); }
+  30% { transform: scale(0.8, 1.1) translateY(-50px); }
+  50% { transform: scale(1) translateY(0); }
+  100% { transform: translateY(0); }
+}
+	.spring {
+  animation: logo_spring 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  background-image: url(GenericPark_logo.png);
 }

@@ -1,20 +1,37 @@
-@keyframes pulseAndChangeColour {
+.site_logo {
+	.logoanimation
+}
+#logo {
+	height: 80px;
+	width: 80px;
+	margin: 25px;
+	}
+	
+	*/ Animation */
+	.logoanimation {
+	animation-name: logoPulseAndChangeColour;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-delay: 2s;
+	}
+	
+	@keyframes logoPulseAndChangeColour {
     0% {
         transform: none;
-        background-color: red;
+        background-color: #fff;
     }
     25% {
-        background-color: blue;
+        background-color: #ffc107;
     }
     50% {
         transform: scale(2);
-        background-color: green;
+        background-color: #28a745;
     }
     75% {
-        background-color: pink;
+        background-color: #dc3545;
     }
     100% {
         transform: none;
-        background-color: orange;
+        background-color: #fd7e14;
     }
 }

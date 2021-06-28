@@ -2,8 +2,8 @@
 	.logoanimation
 }
 #logo {
-	height: 80px;
-	width: 80px;
+	height: 90px;
+	width: 125px;
 	margin: 25px;
 	}
 	
@@ -18,20 +18,20 @@
 	@keyframes logoPulseAndChangeColour {
     0% {
         transform: none;
-        background-color: #fff;
+        background-color: rgba(255, 255, 255, 100);
     }
     25% {
-        background-color: #ffc107;
+        background-color: rgba(204, 255, 204, 100);
     }
     50% {
         transform: scale(2);
-        background-color: #28a745;
+        background-color: rgba(229, 255, 204, 100);
     }
     75% {
-        background-color: #dc3545;
+        background-color: rgba(229, 255, 204, 100);
     }
     100% {
         transform: none;
-        background-color: #fd7e14;
+        background-color: rgba(204, 255, 153, 100);
     }
 }

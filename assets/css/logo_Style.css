@@ -1,21 +1,31 @@
 	*/ Animation */
-	#logo_animation {
-		display: d-inline-block;
-		margin: 25px;
-		animation-name:	logoPulse;
-		animation-duration: 5s;
+	.logo_animation {
+		display: inline-block;
+		height: 100px;
+		width: 135px;
+		margin: 0 auto;
+		background-color: rgb(255, 255, 255);
+		animation-name:	logoStretch;
+		animation-duration: 3s;
+		animation-direction: alternate;
+		animation-timing-function: ease-out;
 		animation-iteration-count: infinite;
-		animation-delay: 2s;
+		animation-delay: 1s;
+		animation-fill-mode: none;
+		animation-play-state: running;
 	}
 	
-	@keyframes logoPulse {
+	@keyframes logoStretch {
     0% {
-        transform: none;
+        transform: scale(.3);
+		background-color: rgb(255, 0, 0);
+		border-radius: 100%;
     }
     50% {
-        transform: scale(2);
+		background-color: rgb(0, 0, 255);
     }
     100% {
-        transform: none;
+        transform: scale(1.5);
+		background-color: rgb(255, 255, 0);
     }
 }

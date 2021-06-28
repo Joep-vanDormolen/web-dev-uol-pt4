@@ -1,11 +1,11 @@
 	*/ Animation */
 	.logo_animation {
-	height: 100px;
-	width: 135px;
-	animation-name: logoPulse;
-	animation-duration: 5s;
-	animation-iteration-count: infinite;
-	animation-delay: 2s;
+		display: inline-block;
+		margin: 25px;
+		animation-name:	logoPulse;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+		animation-delay: 2s;
 	}
 	
 	@keyframes logoPulse {

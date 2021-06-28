@@ -1,0 +1,30 @@
+	.site_logo {
+	.logoanimation,
+	.logo_form
+	}
+
+	.logo_form {
+	height: 100px;
+	weight: 135px;
+	margin: 25px;
+	}
+	
+	*/ Animation */
+	.logo_animation {
+	animation-name: logoPulse;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-delay: 2s;
+	}
+	
+	@keyframes logoPulse {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        transform: none;
+    }
+}

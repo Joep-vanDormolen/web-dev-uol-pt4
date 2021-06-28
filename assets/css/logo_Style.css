@@ -1,24 +1,18 @@
 	*/ Animation */
-	.logo_animation {
+	#logo_animation {
 		display: d-inline-block;
 		height: 100px;
 		width: 135px;
 		margin: auto;
 		background-color: rgb(255, 255, 255);
-		background-position: 25px 25px;
-		animation-name:	logoStretch;
+		background-image: url(GenericPark_logo.png);
+		animation-name:	logoBounce;
 		animation-duration: 3s;
-		animation-direction: alternate;
-		animation-timing-function: ease-out;
 		animation-iteration-count: infinite;
 		animation-delay: 1s;
-		animation-fill-mode: none;
-		animation-play-state: running;
 	}
 	
-	@keyframes logoStretch {
-		from { background-position: 0, 0;}
-		to { background-position: 160, 0; }
+	@keyframes logoBounce {
     0% {
         transform: scale(.3);
 		background-color: rgb(255, 0, 0);

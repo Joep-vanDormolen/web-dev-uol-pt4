@@ -1,0 +1,20 @@
+@keyframes pulseAndChangeColour {
+    0% {
+        transform: none;
+        background-color: red;
+    }
+    25% {
+        background-color: blue;
+    }
+    50% {
+        transform: scale(2);
+        background-color: green;
+    }
+    75% {
+        background-color: pink;
+    }
+    100% {
+        transform: none;
+        background-color: orange;
+    }
+}

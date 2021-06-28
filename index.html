@@ -16,20 +16,43 @@
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 	<!-- JS Lazy Loaded at bottom of page -->
 </head>
+<style>
+@keyframes logo_spring { 
+	0% { transform: scale(1) translateY(0); }
+	10% { transform: scale(1.2, 0.6); }
+	30% { transform: scale(0.8, 1.1) translateY(-50px); }
+	50% { transform: scale(1) translateY(0); }
+	100% { transform: translateY(0); }
+			}
+.spring {
+	width: 116px;
+	height: 90px;
+	display: d-inline-block
+	position: static;
+	overflow: visible;
+    animation-name: logo_spring; 
+	animation-duration: 4s; 
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	background-image: url(assets/images/GenericPark_logo.png);
+	}
+</style>
 <body>
     <!-- Primary Navigation -->
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
+		<div class="spring">
             <a class="navbar-brand" href="index.html">
-			<img="assets/images/logo.png" alt="Theme Park Logo" height="90" width="125" class="d-inline-block align-text-top">
+			<!--<img src="assets/images/GenericPark_logo.png" alt="Theme Park Logo" height="90" width="125" class="d-inline-block align-text-top">-->
 			</a>
+		</div>	
 			 <form class="d-flex">
                 <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Language
                 </button>
-            </form>	
+            </form>		
         </div>
     </nav>
     <!-- Secondary Navigation -->

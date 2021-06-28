@@ -1,6 +1,6 @@
 	*/ Animation */
-	.logo_animation {
-		display: inline-block;
+	#logo_animation {
+		display: d-inline-block;
 		margin: 25px;
 		animation-name:	logoPulse;
 		animation-duration: 5s;

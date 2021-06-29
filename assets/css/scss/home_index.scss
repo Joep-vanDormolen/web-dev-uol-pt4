@@ -109,4 +109,43 @@
   }
   
 
+ @mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+} 
 
+
+@keyframes logo_spring {
+  0%, 75% {
+     transform: translate(0) scale(1);
+  opacity: 1;
+   }
+   40% {
+     transform: translate(300px) scale(1.3);
+  opacity: 1;
+   }
+   70% {
+     transform: translate(-100px) scale(0);
+  opacity: 0.5;
+   }
+ }
+
+
+ .spring {
+  width: 116px;
+  height: 90px;
+  position: static;
+  overflow: visible;
+  animation: logo_spring 8s linear 2;
+  background-image: url(../../assets/images/GenericPark_logo.png);
+  }

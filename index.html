@@ -14,23 +14,50 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-    <!-- JS Lazy Loaded at bottom of page -->
+	<!-- JS Lazy Loaded at bottom of page -->
 </head>
+<style>
+@keyframes logo_spring {
+	0%, 75% {
+    transform: translate(0) scale(1);
+	opacity: 1;
+  }
+  40% {
+    transform: translate(300px) scale(1.3);
+	opacity: 1;
+  }
+  70% {
+    transform: translate(-100px) scale(0);
+	opacity: 0.5;
+  }
+}
+.spring {
+	width: 116px;
+	height: 90px;
+	display: d-inline-block
+	position: static;
+	overflow: visible;
+    animation-name: logo_spring; 
+	animation-duration: 8s;
+	animation-iteration-count: 1;
+	background-image: url(assets/images/GenericPark_logo.png);
+	}
+</style>
 <body>
     <!-- Primary Navigation -->
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
+		<div class="spring">
             <a class="navbar-brand" href="index.html">
-            <img src="assets/images/logo.png" alt="Theme Park Logo" width="30" height="24" class="d-inline-block align-text-top">
-            Logo
-            </a>
-            <form class="d-flex">
+			</a>
+		</div>	
+			 <form class="d-flex">
                 <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Language
                 </button>
-            </form>
+            </form>		
         </div>
     </nav>
     <!-- Secondary Navigation -->
@@ -44,14 +71,6 @@
         <li class="nav-item">
           <a class="nav-link" href="park_map.html">Location</a>
         </li>
-		<!--
-        <li class="nav-item"> 
-        <a class="nav-link" href="#">FAQ</a> 
-        </li>
-        <li class="nav-item"> 
-          <a class="nav-link" href="#">Support</a>
-        </li> 
-        -->
     </ul>
     <!-- Hero Carousel Slider -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">

@@ -53,7 +53,8 @@
   </div>
 
     
- <!-- Tickets -->
+ <!-- Ticket information in container -->
+ <!-- Each ticket is in its own block -->
  <div class="container">
   <div class="tickets-text">    
       <h3>Online Ticket Sales &amp; Ticket Pricing</h3>
@@ -112,7 +113,7 @@
 
     
 </div>
-       <!-- Calendar -->
+       <!-- Container for the calendar -->
     <div class="calendar">
       <div class='container'>
         <div class="tickets-text">    
@@ -212,7 +213,7 @@
           </div>
     </div>
   </div>
-    <!-- Stripe -->
+    <!-- Container for Stripe payment system -->
     <div class="stripe">
         <form class="stripe-form" action="//httpbin.org/post" method="POST">
           <input type="hidden" name="token" />
@@ -279,8 +280,10 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
                         <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
-                        <p>Don’t miss the latest safety updates.</p>
-                        <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate>
+                        <ul class="list-unstyled f_list">
+                          <li><a href="#">Don't miss the latest safety updates. </a></li>
+                        </ul>
+                       <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate>
                             <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
                             <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
                             <p class="mchimp-errmessage" style="display: none;"></p>

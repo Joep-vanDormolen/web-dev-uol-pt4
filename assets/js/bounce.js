@@ -1,7 +1,7 @@
 $(document).ready(function() {
  $(window).on('scroll', function() {
 
-    if ($(window).scrollTop() + $(window).height() > 1200) {
+    if ($(window).scrollTop() + $(window).height() > $('.scroll_container').offset().top+$(window).height() -50) {
       $('.bounce_arrow').hide();
     } else {
       $('.bounce_arrow').show();
@@ -12,7 +12,7 @@ $(document).ready(function() {
   $('.bounce_arrow').click( function(){
       //scroll down to the park_schedule on the park map page.  css / js animation example lsheed
       $('html, body').animate({
-          scrollTop: $('.park_schedule_container').offset().top
+          scrollTop: $('.scroll_container').offset().top
         }, 1000);
   });
 

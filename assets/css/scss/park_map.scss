@@ -22,8 +22,18 @@
             padding-top: 20px;
             padding-bottom: 20px;
         }
-        
     }
+
+    .image {
+        transition:  transform 250ms;
+    }
+
+    .image:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transform: scale(0.95);
+
+    }
+
 
     /*  set margins for the p inside directions_container to 30px left/right
         and set italic text

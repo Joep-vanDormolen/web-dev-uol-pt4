@@ -9655,6 +9655,15 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.btn-outline-success:hover {
+  border-color: #0062cc;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active, .show > .btn-outline-success.dropdown-toggle {
+  border-color: #0062cc;
+  background-color: #0062cc;
+}
+
 body {
   font-family: "Lato", Arial, sans-serif;
   font-size: 16px;

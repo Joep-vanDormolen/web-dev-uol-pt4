@@ -8,6 +8,16 @@ $hover: #005cbf;
 $light_blue: #0062cc;
 
 
+.btn-outline-success:hover {
+  border-color: $light_blue;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active, .show > .btn-outline-success.dropdown-toggle {
+  border-color: $light_blue;
+  background-color:  $light_blue;
+}
+
+
 body{
     font-family: $font-primary;
     font-size: 16px;

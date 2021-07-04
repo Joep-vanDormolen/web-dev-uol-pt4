@@ -59,16 +59,17 @@
 
     <!-- Header Image -->
     <!-- Note: Header Image is full width-->
-    <div class="container-fluid w-100 h-auto m-0 p-0"> <!-- 100% width, double border at top -->
+    <div class="container-fluid w-100 h-auto m-0 p-0 scrollvisible"> <!-- 100% width, double border at top -->
         <!-- Image of the map of the park-->
-        <img class='img-fluid w-100' src='assets/images/hero2.png' alt='GenericPark&trade; Mouse Waving at the Castle'> 
+        <img class='img-fluid w-100' src='assets/images/hero2.png' alt='GenericPark&trade; Mouse Waving at the Castle'>
+        <!-- Scroll Arrow wrapper outerheight? -->
+        <div class="bounce_arrow animated bounce"><a href="#footer_bottom"></a></div> 
     </div>
 
-    <!-- Scroll Arrow -->
-    <div class="arrow animated bounce"></div>
 
     <!-- General Park Info inside container of the page -->
     <div class="container-fluid park_schedule_container"> <!-- start park_schedule_container bg full width container -->
+
         <div class='container space-between flex-start'> <!-- start flex container -->
             <div class="row pt-5 pb-5"> <!-- start row pt-5 pb-5 (padding top/bottom 5em) -->
                 <h3>Park Schedule</h3>
@@ -130,6 +131,7 @@
     </div>
 
     <!-- Element that holds directions to the park and a document with safety compliance -->
+    <a name="safety_measures" class="safety_measures" href="#"></a> <!-- Give myself a location to target for scroll down bouncer -->
     <div class='container-fluid directions_container'>
         <div class='container space-between flex-start'>
             <div class="row pt-5 pb-5 "> <!-- Padding Top, Bottom 5 -->
@@ -210,6 +212,8 @@
             </div>
         </div>
     </div>
+
+
     <div class="footer_bottom">
         <div class="container">
             <div class="row justify-content-center">

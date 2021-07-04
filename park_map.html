@@ -10,6 +10,8 @@
     <title>GenericPark&trade; -  Park Information</title>
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!-- Bootstrap Icons -->
@@ -66,37 +68,23 @@
     <div class="arrow animated bounce"></div>
 
     <!-- General Park Info inside container of the page -->
-    <div class="container-fluid park_schedule_container">
-        <div class='container space-between flex-start'>
-            <div class="row pt-5 pb-5">
+    <div class="container-fluid park_schedule_container"> <!-- start park_schedule_container bg full width container -->
+        <div class='container space-between flex-start'> <!-- start flex container -->
+            <div class="row pt-5 pb-5"> <!-- start row pt-5 pb-5 (padding top/bottom 5em) -->
                 <h3>Park Schedule</h3>
                 <!-- Each block is only 1/4 the width of the outer container -->
                 <div class="col-sm">
                         <h3 class="f-title f_600 t_color f_size_18">Opening Times</h3>
-                        <p>Monday: 10:00 - 22:00 <br>
-                            Tuesday: 10:00 - 22:00 <br>
-                            Wednesday: 10:00 - 22:00 <br>
-                            Thursday: 10:00 - 22:00 <br>
-                            Friday: 10:00 - 22:00 <br>
-                            Saturday: 10:00 - 22:00 <br>
-                            Sunday: 10:00 - 22:00
+                        <table class="table table-striped">
+                            <tr><td>Monday</td><td>10:00 - 22:00</td></tr>
+                            <tr><td>Tuesday</td><td>10:00 - 22:00</td></tr>
+                            <tr><td>Wednesday</td><td>10:00 - 22:00</td></tr>
+                            <tr><td>Thursday</td><td>10:00 - 22:00</td></tr>
+                            <tr><td>Friday</td><td>10:00 - 22:00</td></tr>
+                            <tr><td>Saturday</td><td>10:00 - 22:00</td></tr>
+                            <tr><td>Sunday</td><td>10:00 - 22:00</td></tr>
+                        </table>
                         </p>
-                </div>
-                <div class="col-sm">
-                    <h3 class="f-title f_600 t_color f_size_18">Parade Times</h3>
-                    <p>Every day at:<br>
-                        10:00 - 10:30<br>
-                        12:00 - 12:30<br>
-                        14:00 - 14: 30<br>
-                        16:00 - 16:30 <br>
-                        18:00 - 18:30 <br>
-                        20:00 - 20:30 <br>
-                    </p>
-                </div>
-                <div class="col-sm">
-                    <h3 class="f-title f_600 t_color f_size_18">Special Events</h3>
-                    <p>At GenericPark&trade; our special events are really special.  So special in fact, that you'll just have to come to the park to find out what they are!
-                    </p>
                 </div>
                 <div class="col-sm">
                     <h3 class="f-title f_600 t_color f_size_18">Schedule</h3>
@@ -105,9 +93,29 @@
                         We play it by ear. If its being eaten by crazy dinosaurs or getting run over by a runaway roller coaster, its not in our schedule, so it didn't happen.
                     </p>
                 </div>
-            </div>
-        </div>
-    </div>
+        
+                <div class="col-sm">
+                    <h3 class="f-title f_600 t_color f_size_18">Special Events</h3>
+                    <p>At GenericPark&trade; our special events are really special.  So special in fact, that you'll just have to come to the park to find out what they are!
+                    </p>
+                </div>
+
+                <div class="col-sm">
+                    <h3 class="f-title f_600 t_color f_size_18">Parade Times</h3>
+                        <table class="table table-striped">
+                            <tr><td>Daily</td><td>10:00 - 10:30</td></tr>
+                            <tr><td>Daily</td><td>12:00 - 12:30</td></tr>
+                            <tr><td>Daily</td><td>14:00 - 14:30</td></tr>
+                            <tr><td>Daily</td><td>16:00 - 16:30</td></tr>
+                            <tr><td>Daily</td><td>18:00 - 18:30</td></tr>
+                            <tr><td>Daily</td><td>20:00 - 20:30</td></tr>
+                        </table>
+                    </p>
+                </div>
+                
+            </div> <!-- end row pt-5 pb-5 (padding top/bottom 5em) -->
+        </div> <!-- end flex container -->
+    </div> <!-- end park_schedule_container bg full width container -->
 
     <!-- Downloadable/Viewable Park Map extends the full width of the page -->
     <!-- Currently nothing happens when you click the button-->

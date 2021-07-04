@@ -1,5 +1,5 @@
 
-var stripe = Stripe('pk_test_6pRNASCoBOKtIshFeQd4XMUh');
+/*var stripe = Stripe('pk_test_6pRNASCoBOKtIshFeQd4XMUh');
 var elements = stripe.elements();
 
 var card = elements.create('card', {
@@ -19,7 +19,7 @@ var card = elements.create('card', {
     },
   }
 });
-card.mount('#card-element');
+card.mount('#card-element'); 
 
 function setOutcome(result) {
   var successElement = document.querySelector('.success');
@@ -59,3 +59,6 @@ document.querySelector('form').addEventListener('submit', function(e) {
   };
   stripe.createToken(card, options).then(setOutcome);
 });
+
+
+*/

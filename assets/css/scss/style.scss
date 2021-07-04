@@ -258,7 +258,7 @@ h1, h2, h3, h4, h5,
 }
 
 
-/* Loz define mixin for keyframes used in home_index and park_map */
+/* LSheed define mixin for keyframes used in home_index and park_map */
  @mixin keyframes($animationName) {
     @-webkit-keyframes #{$animationName} {
         @content;
@@ -433,5 +433,5 @@ h1, h2, h3, h4, h5,
 
 
 .table {
-    border: 1em; /* loz deliberate border bottom to make table look nicer */
+    border: 1em; /* l sheed deliberate border bottom to make table look nicer */
 }

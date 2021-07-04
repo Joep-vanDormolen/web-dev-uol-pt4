@@ -10,9 +10,9 @@ $(document).ready(function() {
 
 
   $('.bounce_arrow').click( function(){
-      // document.querySelector('.download_map_button').scrollIntoView({ behavior: 'smooth' });
-$('html, body').animate({
-          scrollTop: $('.safety_measures').offset().top+50
+      //scroll down to the park_schedule on the park map page.  css / js animation example lsheed
+      $('html, body').animate({
+          scrollTop: $('.park_schedule_container').offset().top
         }, 1000);
   });
 

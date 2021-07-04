@@ -9906,7 +9906,7 @@ h1, h2, h3, h4, h5,
   transition: 0.3s all ease;
 }
 
-/* Loz define mixin for keyframes used in home_index and park_map */
+/* LSheed define mixin for keyframes used in home_index and park_map */
 /* First Page - Home */
 /* First Page - Home */
 .nav-blue {
@@ -10243,7 +10243,7 @@ button:active {
   font-style: italic;
 }
 
-/* LS Added */
+/* LSheed Added */
 @keyframes bounce {
   0%, 25%, 50%, 75%, 100% {
     transform: translateY(0);
@@ -10442,7 +10442,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .table {
   border: 1em;
-  /* loz deliberate border bottom to make table look nicer */
+  /* l sheed deliberate border bottom to make table look nicer */
 }
 
 /*# sourceMappingURL=style.css.map */

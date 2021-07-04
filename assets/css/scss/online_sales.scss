@@ -29,13 +29,13 @@
     margin: auto;
     padding-top: 60px;
 
-    h3 {  
+   /* h3 {  
         color: #0000AA;
     }
 
-    h4 {
+   h4 {
       color: blue;
-    }
+    }*/
   }
   
   
@@ -83,6 +83,8 @@
     box-shadow: 0 7px 14px 0 rgba(49, 49, 93, 0.10), 0 3px 6px 0 rgba(0, 0, 0, 0.08);
     border-radius: 4px;
     margin-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   
   label {

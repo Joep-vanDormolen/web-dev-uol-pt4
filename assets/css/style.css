@@ -9689,7 +9689,7 @@ h1, h2, h3, h4, h5,
 }
 
 .ftco-section {
-  padding: 7em 0;
+  padding: 2em 0;
 }
 
 .ftco-no-pt {
@@ -10016,17 +10016,17 @@ body {
 
 .text1 {
   padding: 5px 100px 70px;
-}
-.text1 h2 {
-  color: blue;
+  /* h2 {
+     color: blue;
+   }*/
 }
 
 .text3 {
   width: 100%;
   padding: 20px 20px 70px;
-}
-.text3 h2 {
-  color: blue;
+  /*h2 {
+    color: blue;
+  }*/
 }
 
 .section2 {
@@ -10105,12 +10105,13 @@ p.tickets {
 .tickets-text {
   margin: auto;
   padding-top: 60px;
-}
-.tickets-text h3 {
-  color: #0000AA;
-}
-.tickets-text h4 {
-  color: blue;
+  /* h3 {  
+       color: #0000AA;
+   }
+
+  h4 {
+     color: blue;
+   }*/
 }
 
 .flexcontainer {
@@ -10150,6 +10151,8 @@ p.tickets {
   box-shadow: 0 7px 14px 0 rgba(49, 49, 93, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.08);
   border-radius: 4px;
   margin-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 label {
@@ -10423,7 +10426,8 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .new_footer_top .f-title {
   margin-bottom: 30px;
-  color: #263b5e;
+  color: #263baf;
+  /* #263b5e; */
 }
 
 .f_600 {

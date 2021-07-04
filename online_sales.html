@@ -55,69 +55,62 @@
     
  <!-- Ticket information in container -->
  <!-- Each ticket is in its own block -->
- <div class="container">
-  <div class="tickets-text">    
-      <h3>Online Ticket Sales &amp; Ticket Pricing</h3>
-      <h4>1. Select Your Tickets:</h4>
-  </div>
-<div class='container-fluid directions_container'>
-  <div class='container space-between flex-start'>
-      <div class="row pt-5 pb-5 "> <!-- Padding Top, Bottom 5 -->
-          <div class='col-sm text-center'>
-              <img src='assets/images/one_day.png' alt='Children playing' height='235' width='300'>
-              <br>
-              <button class="btn" type='button'>Click to buy this ticket</button>
-              <H5>Ticket: One Day</H5>
-              <p>This ticket is for those families that are looking for 
-                a quick getaway.</p>
-          </div>
-          
-          <div class='col-sm text-center'>
-            <img src='assets/images/one_day_ticket.png' alt='Image of a castle' height='235' width='300'>
-            <br>
-            <button class="btn" type='button'>Click to buy this ticket</button>
-            <H5>Ticket: One Day Undated</H5>
-            <p>The undated ticket option gives you the freedom to visit 
-              us whenever you want.</p>
+ <div class="container-fluid park_schedule_container"> <!-- outer full width colored bg container -->
+    <div class="container"> <!-- padded inner container -->
+        <div class="tickets-text">    
+            <h3>Online Ticket Sales &amp; Ticket Pricing</h3>
+            <h4 class="f-title f_600 t_color f_size_18">Select Your Tickets:</h4>
         </div>
+        <div class='container-fluid directions_container pt-5 pb-5'> <!-- inner white container Padding Top, Bottom 5 -->
+            
+                <div class="row"> 
+                    <div class='col-sm text-center'>
+                        <img src='assets/images/one_day.png' alt='Children playing' height='235' width='300'>
+                        <br>
+                        <button class="btn" type='button'>Click to buy this ticket</button>
+                        <H5>Ticket: One Day</H5>
+                        <p>This ticket is for those families that are looking for 
+                        a quick getaway.</p>
+                    </div>
 
-                      
-      </div>
-  </div>
-</div>
+                    <div class='col-sm text-center'>
+                        <img src='assets/images/one_day_ticket.png' alt='Image of a castle' height='235' width='300'>
+                        <br>
+                        <button class="btn" type='button'>Click to buy this ticket</button>
+                        <H5>Ticket: One Day Undated</H5>
+                        <p>The undated ticket option gives you the freedom to visit 
+                        us whenever you want.</p>
+                    </div>
+                </div> <!-- end row -->
 
-<div class='container-fluid directions_container'>
-<div class='container space-between flex-start'>
-    <div class="row pt-5 pb-5 "> <!-- Padding Top, Bottom 5 -->
-      <div class='col-sm text-center'>
-        <img src='assets/images/multi_day_ticket_png' alt='Someone buying a ticket' height='235' width='300'>
-        <br>
-        <button class="btn" type='button'>Click to buy this ticket</button>
-        <H5>Ticket: Three-days </H5>
-        <p>The standard three day ticket is for 
-          those who want to take their time and explore the park at their leisure.</p>
-    </div>
+                <div class="row"> <!-- Padding Top, Bottom 5 -->
+                    <div class='col-sm text-center'>
+                        <img src='assets/images/multi_day_ticket_png' alt='Someone buying a ticket' height='235' width='300'>
+                        <br>
+                        <button class="btn" type='button'>Click to buy this ticket</button>
+                        <H5>Ticket: Three-days </H5>
+                        <p>The standard three day ticket is for 
+                          those who want to take their time and explore the park at their leisure.</p>
+                    </div>
 
-    <div class='col-sm text-center'>
-      <img src='assets/images/multi_day_shuttle.png' alt='Two people buying a ticket' height='235' width='300'>
-      <br>
-      <button class="btn" type='button'>Click to buy this ticket</button>
-      <H5>Ticket: Three-days &amp; transfer </H5>
-      <p>Need transportation? This ticket includes
-        a transfer to and from the park.</p>
-  </div>
-        
-    </div>
-</div>
-</div>
+                    <div class='col-sm text-center'>
+                        <img src='assets/images/multi_day_shuttle.png' alt='Two people buying a ticket' height='235' width='300'>
+                        <br>
+                        <button class="btn" type='button'>Click to buy this ticket</button>
+                        <H5>Ticket: Three-days &amp; transfer </H5>
+                        <p>Need transportation? This ticket includes a transfer to and from the park.</p>
+                    </div>
+                </div> <!-- end row -->
+        </div> <!-- end inner white container -->
+    </div> <!-- end padded innner container -->
+</div>  <!-- end full width outer bg container for the ticket sales section -->
 
-    
-</div>
+
        <!-- Container for the calendar -->
     <div class="calendar">
       <div class='container'>
         <div class="tickets-text">    
-            <h4>2. Choose A Date Of Visit</h4>
+            <h4 class="f-title f_600 t_color f_size_18">Choose A Date Of Visit</h4>
         </div>
         <div class="ftco-section">
             <div class="container">
@@ -214,64 +207,77 @@
     </div>
   </div>
     <!-- Container for Stripe payment system -->
-    <div class="stripe">
-        <form class="stripe-form" action="//httpbin.org/post" method="POST">
-          <input type="hidden" name="token" />
-          <div class="group">
-              <span>Card</span>
-              <div id="card-element" class="field"></div>
-          </div>
-          <div class="group">
-            <label>
-              <span>First name</span>
-              <input id="first-name" name="first-name" class="field" placeholder="Manoj" />
-            </label>
-            <label>
-              <span>Last name</span>
-              <input id="last-name" name="last-name" class="field" placeholder="Halugona" />
-            </label>
-          </div>
-          <div class="group">
-            <label>
-              <span>Address</span>
-              <input id="address-line1" name="address_line1" class="field" placeholder="77 Winchester Lane" />
-            </label>
-            <label>
-              <span>Address (cont.)</span>
-              <input id="address-line2" name="address_line2" class="field" placeholder="" />
-            </label>
-            <label>
-              <span>City</span>
-              <input id="address-city" name="address_city" class="field" placeholder="Coachella" />
-            </label>
-            <label>
-              <span>State</span>
-              <input id="address-state" name="address_state" class="field" placeholder="SA" />
-            </label>
-            <label>
-              <span>ZIP</span>
-              <input id="address-zip" name="address_zip" class="field" placeholder="92236" />
-            </label>
-            <label>
-              <span>Country</span>
-              <select name="address_country" id="address-country" class="field">
-                <option value="US" selected>US</option>
-                <option value="UK">UK</option>
-                <option value="PT">Portugal</option>
-                <option value="NL">Netherlands</option>
-                <option value="SK">South Korea</option>
-              </select>
-            </label>
-          </div>
-          <button class="stripe-button" type="submit">Pay Now</button>
-          <div class="outcome">
-            <div class="error"></div>
-            <div class="success">
-              Success! Your Stripe token is <span class="token"></span>
+
+    <div class="container-fluid park_schedule_container"> <!-- outer colored bg container -->
+        <div class="container"> 
+            <div class="row pt-5 pb-5">   
+                <h4 class="f-title f_600 t_color f_size_18">Choose A Payment Method</h4>
+
+                <div class="stripe">
+
+                    <form class="stripe-form" action="//httpbin.org/post" method="POST">
+                      <input type="hidden" name="token" />
+                      <div class="group">
+                        <labeL>
+                          <span>Card</span>
+                          <div id="card-element" class="field"></div>
+                        </labeL>
+                      </div>
+                      <div class="group">
+                        <label>
+                          <span>First name</span>
+                          <input id="first-name" name="first-name" class="field" placeholder="John" />
+                        </label>
+                        <label>
+                          <span>Last name</span>
+                          <input id="last-name" name="last-name" class="field" placeholder="Doe" />
+                        </label>
+                      </div>
+                      <div class="group">
+                        <label>
+                          <span>Address</span>
+                          <input id="address-line1" name="address_line1" class="field" placeholder="77 Winchester Lane" />
+                        </label>
+                        <label>
+                          <span>Address (cont.)</span>
+                          <input id="address-line2" name="address_line2" class="field" placeholder="" />
+                        </label>
+                        <label>
+                          <span>City</span>
+                          <input id="address-city" name="address_city" class="field" placeholder="Coachella" />
+                        </label>
+                        <label>
+                          <span>State</span>
+                          <input id="address-state" name="address_state" class="field" placeholder="SA" />
+                        </label>
+                        <label>
+                          <span>ZIP</span>
+                          <input id="address-zip" name="address_zip" class="field" placeholder="92236" />
+                        </label>
+                        <label>
+                          <span>Country</span>
+                          <select name="address_country" id="address-country" class="field">
+                            <option value="US" selected>US</option>
+                            <option value="UK">UK</option>
+                            <option value="PT">Portugal</option>
+                            <option value="NL">Netherlands</option>
+                            <option value="SK">South Korea</option>
+                          </select>
+                        </label>
+                      </div>
+                      <button class="stripe-button" type="submit">Pay Now</button>
+                      <div class="outcome">
+                        <div class="error"></div>
+                        <div class="success">
+                          Success! Your Stripe token is <span class="token"></span>
+                        </div>
+                      </div>
+                    </form>
+                </div> <!-- end Stripe -->
             </div>
-          </div>
-        </form>
-      </div>
+        </div>
+    </div> <!-- end container -->
+
    <!-- Footer -->
    <footer class="new_footer_area bg_color">
     <div class="new_footer_top">
